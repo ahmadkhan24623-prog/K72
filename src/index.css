@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@font-face{
+    font-family:font1 ;
+    src: url(../public/fonts/Lausanne-300.woff2);
+}
+@font-face{
+    font-family:font2 ;
+    src: url(../public/fonts/Lausanne-500.woff2);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.move-x {
+    animation-name: moveAnimation;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;   
+}
+
+/* 1. Prevent the stair columns from appearing at full height before GSAP starts */
+.stairring {
+  height: 0;
+}
+
+
+
+/* 3. Hide the main container until GSAP takes over  */
+ [ref="fullNavLinkRef"] {
+  opacity: 0;
+}
+
+.moveLink{
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.link:hover .moveLink{
+    opacity: 1;
+}
+
+@keyframes moveAnimation{
+    from{
+        transform: translateX(0); 
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
