@@ -55,16 +55,17 @@ const TeamList = () => {
       className="w-full bg-black text-white font-bold uppercase mt-10 relative"
       onMouseMove={handleMouseMove}
     >
-      
       <div
         ref={imageRef}
-        className="fixed top-0 left-0 w-[200px] h-[260px] pointer-events-none  opacity-0 -translate-x-1/2 -translate-y-1/2"
-        >
-        <img
-          src={activeImg}
-          alt="Image"
-          className="w-full h-full object-cover rounded-lg"
-        />
+        className="fixed top-0 left-0 w-[200px] h-[260px] pointer-events-none opacity-0 -translate-x-1/2 -translate-y-1/2"
+      >
+        {activeImg && (
+          <img
+            src={activeImg}
+            alt="Team Member"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        )}
       </div>
 
       <div className="w-full border-t border-gray-800">
