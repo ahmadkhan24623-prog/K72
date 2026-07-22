@@ -25,7 +25,8 @@ function Navbar() {
           ref={navGreenRef} 
           className='bg-[#D3FD50] transition-all duration-300 absolute top-0 h-0 w-full'
         ></div>
-        {/* this is  */}
+        {/* this is commit */}
+        {/* I will remove you   */}
 
         <div className='relative flex flex-col items-end justify-center h-full px-6 gap-1'>
           <div className='w-10 h-[2px] bg-white'></div>
