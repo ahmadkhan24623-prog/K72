@@ -198,7 +198,7 @@ function FullScreenNav() {
                   src="https://k72.ca/images/caseStudies/Capture_d%E2%80%99ecran_le_2025-09-17_a_18.11.25.png?w=1920&fm=jpg&s=53fb69332aedd6c1fa5499623c55789a"
                   alt=""
                 />
-              </div>
+              </div> 
             </div>
           </div>
 
