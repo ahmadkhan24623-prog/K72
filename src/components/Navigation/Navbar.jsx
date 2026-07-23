@@ -60,7 +60,7 @@ function Navbar() {
         {/* Menu (Smaller size on home page, original size on other pages) */}
         <div 
           onClick={() => setNavOpen(true)} 
-          onMouseEnter={() => {
+          onMouseEnter={() => {  
             if (navGreenRef.current) navGreenRef.current.style.height = '100%';
           }} 
           onMouseLeave={() => {

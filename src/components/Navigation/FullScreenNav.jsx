@@ -57,7 +57,7 @@ function FullScreenNav() {
 
     tl.to(".fullscreennav", {
       display: "none",
-    });
+    }); 
   }
 
   useGSAP(
